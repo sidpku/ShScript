@@ -10,4 +10,5 @@ FILENAME='DailyReport.md'
 OUTPUT='UnFinished.md'
 
 
-grep -n '\-\s\[\s\]' $FILENAME > $OUTPUT
+grep -n '\-\s\[\s\]' $FILENAME |awk -F ':' '{print $2 "\t(Page:"$1")"}' >
+$OUTPUT
