@@ -1,11 +1,15 @@
 #!/bin/bash
-# bash: finding unanswered questions, save in a new file
+# bash: finding unfinished tasks, save in a new file
 # Input: No
 # Constant:
-# `	FILENAME:	file contains my questions
+# `	FILENAME:	file contains my tasks
 #	OUTPUT:		FIle to save
+# Output: File save the Unfinished task.
 # Author:	Sid(cnqdcyq@163.com)
 # Date:		2021-6-16
+# Version:
+#	1.0:	create,use grep and awk to summary all unfinished tasks in markdown
+#			files.
 FILENAME='DailyReport.md'
 OUTPUT='UnFinished.md'
 
